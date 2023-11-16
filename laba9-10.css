@@ -1,0 +1,256 @@
+html{
+	scroll-behavior: smooth;
+}
+
+body
+{
+	font-size: large;
+	font-family: Trebuchet MS; 
+	background: linear-gradient(to top ,rgba(172, 148, 235,0.8), white);
+	background-attachment: fixed;
+}
+
+nav ul
+{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	text-align: center;
+	max-width: 100%;
+ 	margin: 25px;
+}
+
+ul
+{
+	text-align: center;
+	margin: 0;
+	padding: 0 ;
+	list-style: none;
+}
+
+ul li a
+{
+	text-align: center;
+	color:DarkOrchid ;
+	display: block;
+	max-height: 30%;
+	padding: 0 20px;
+	text-decoration: none;
+	line-height: 30px;
+	background:rgba(172, 148, 235,0.1);
+	border-radius: 7px;
+}
+
+ul li a:hover 
+{
+	transition-duration: 0.3s;
+	background: radial-gradient(circle, white, rgb(232, 250, 250));
+	transform: scale(1.1);
+}
+
+ul li
+{
+	float: left;
+}
+
+h1
+{
+	color:DarkOrchid;
+	text-align: center;
+	text-shadow: 2px 2px 5px rgb(214, 249, 248);
+	animation: ah1 2.5s infinite alternate;
+}
+
+@keyframes ah1 {
+  0%   {color:DarkOrchid;}
+  25%  {color:darkviolet;}
+  50%  {color:rgb(174, 101, 241);}
+  75%  {color:rgb(215, 58, 249);}
+  100% {color:blueviolet;}
+}
+
+@keyframes aimg {
+  0%   {border:dotted darkviolet}
+  25%  {border:dashed DarkOrchid}
+  50%  {border:solid darkviolet}
+  75%  {border:groove DarkOrchid}
+  100% {border:double darkviolet}
+}
+
+main
+{
+	margin-left: 10%; 
+	margin-right: 10%; 
+	text-align: justify;
+}
+
+main table tr th,td{
+	margin: 5px;
+	padding: 7px;
+	text-align: center;
+	border:outset Orchid;
+	border-radius: 7px;
+	animation: atabl 1.5s infinite alternate;
+}
+
+@keyframes atabl {
+  0%   {border:outset Orchid}
+  25%  {border:groove Orchid}
+  50%  {border:ridge Orchid}
+  75%  {border:inset Orchid}
+  100% {border:outset Orchid}
+}
+
+h2, footer table th
+{
+	color:darkviolet;
+	text-shadow: 2px 2px 5px rgb(232, 250, 250);
+	animation: ah1 2.5s infinite alternate;
+}
+
+h3
+{
+	font-size: xx-large;
+	text-align: center;
+	animation-name: ah1;
+	animation: ah1 2.5s infinite alternate;
+}
+
+iframe
+{
+	width: 95%;
+	height: 25%;
+	border:0;
+	allowfullscreen:"";
+	referrerpolicy: "no-referrer-when-downgrade";
+}
+
+footer
+{
+	text-align: center; 
+	margin-bottom: 0px; 
+	margin-left: 0px; 
+	margin-right: 0px;
+}
+
+footer table tr th{
+	text-align: center;
+	padding-left: 9px; 
+	padding-right: 9px;
+}
+
+footer a:link 
+{
+  color: blueviolet;
+}
+
+footer a:visited 
+{
+  color: rgb(137, 118, 254);
+}
+
+footer a:hover 
+{
+  color: rgb(232, 250, 250);
+}
+
+footer a:active 
+{
+  color: lightblue;
+}
+
+div.gallery 
+{
+  border: 3px groove lightblue;
+  border-radius: 7px;
+}
+
+div.gallery:hover 
+{
+  border: 3px groove blueviolet;
+  transition-duration: 0.3s;
+  transform: scale(1.05);
+}
+
+div.gallery img 
+{
+  width: 100%;
+  height: auto;
+}
+
+div.desc 
+{
+  padding: 10px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+.immg 
+  {
+    width: 70%;
+  }
+
+.immg img
+{
+	border-radius: 7px;
+	animation: aimg 2s infinite alternate;
+}
+
+@media only screen and (max-width: 900px) 
+{
+  .responsive 
+  {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+
+  .immg 
+  {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 600px) 
+{
+  .responsive 
+  {
+    width: 100%;
+  }
+
+  .immg 
+  {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input
+{
+	background: rgb(232, 250, 250);
+	border-radius: 7px;
+	font-size: large; 
+	font-family: Trebuchet MS;
+	padding: 5 10px;
+}
+
+div.button:hover 
+{
+  transition-duration: 0.3s;
+  transform: scale(1.01);
+}
