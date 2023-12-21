@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="laba9-10.css">
+		<title>Додаткова форма</title>
+	</head>
+
+	<body>
+	<header>
+		<h1>Форма, що додана в розгалуджені</h1>
+		<hr>
+	</header>
+
+	<main>
+		<h3>Дякую що переглянули сторінку! &#128568</h3>
+	</main>
+</html>
